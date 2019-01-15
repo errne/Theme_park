@@ -187,6 +187,9 @@
       <find>playground</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
@@ -436,6 +439,7 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -549,7 +553,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DodgemsTest">
+  <component name="RunManager" selected="JUnit.ParkTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -576,7 +580,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="PlaygroundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemePark_test" />
       <extension name="coverage">
         <pattern>
@@ -587,7 +591,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="AttractionsTest" />
-      <option name="MAIN_CLASS_NAME" value="AttractionsTest.PlaygroundTest" />
+      <option name="MAIN_CLASS_NAME" value="AttractionsTest.ParkTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -696,18 +700,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.RollercoasterTest" />
-      <item itemvalue="JUnit.PlaygroundTest" />
       <item itemvalue="JUnit.ThemeParkTest.hasName" />
       <item itemvalue="JUnit.ThemeParkTest.getAllReviewed" />
       <item itemvalue="JUnit.DodgemsTest" />
+      <item itemvalue="JUnit.ParkTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkTest" />
         <item itemvalue="JUnit.DodgemsTest" />
         <item itemvalue="JUnit.RollercoasterTest" />
         <item itemvalue="JUnit.ThemeParkTest.getAllReviewed" />
         <item itemvalue="JUnit.ThemeParkTest.hasName" />
-        <item itemvalue="JUnit.PlaygroundTest" />
       </list>
     </recent_temporary>
   </component>
@@ -758,7 +762,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -769,7 +772,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32965517" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
