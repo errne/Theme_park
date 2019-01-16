@@ -1,6 +1,9 @@
 import Attractions.Attraction;
 import Interfaces.IReviewed;
+import Interfaces.ISecurity;
+import Interfaces.ITicketed;
 import Stalls.Stall;
+import Visitor.Visitor;
 
 import java.util.ArrayList;
 
@@ -45,7 +48,54 @@ public class ThemePark {
         this.stalls.add(stall);
     }
 
-//    public void visit(Visitor, Attraction){
-//
+    public ArrayList<ITicketed> getAllAllowedFor(Visitor visitor){
+
+        ArrayList<ITicketed>allAllowed = new ArrayList<>();
+        ArrayList<ISecurity>checks = new ArrayList<>();
+        for (Attraction attraction : attractions){
+            if(attraction instanceof ISecurity && attraction instanceof ITicketed){
+                checks.add((ISecurity) attraction);
+            } else if (attraction instanceof ITicketed){
+                allAllowed.add((ITicketed) attraction);
+            }
+        }
+
+        for (Stall stall : stalls){
+            if(stall instanceof ISecurity){
+                checks.add((ISecurity) stall);
+            } else if (stall instanceof ITicketed){
+                allAllowed.add((ITicketed) stall);
+            }
+        }
+
+        for (ISecurity check : checks){
+            if(check.isAllowedTo(visitor)){
+                allAllowed.add((ITicketed) check);
+            }
+        }
+        return allAllowed;
+
+    }
+
+    public String getReviewsString(){
+        String list = "";
+       ArrayList<IReviewed> reviews = getAllReviewed();
+       for (IReviewed review : reviews){
+         //  list += review.toString();
+           list += review.getName();
+           list += ": ";
+           list += review.getRating();
+           list += ", ";
+       }
+        return list;
+    }
+
+//    public void visit(Visitor visitor, Attraction attraction){
+//            if(attraction instanceof ISecurity){
+//                if (((ISecurity) attraction).isAllowedTo(visitor)){
+//                    visitor.spendMoney(Attraction attraction.);
+//                }
+//            }
 //    }
+
 }

@@ -21,4 +21,8 @@ public abstract class Attraction implements IReviewed {
     public void setRating(int rating){
         this.rating = rating;
     }
+
+    public String toString(){
+        return this.name + ": " + this.rating;
+    }
 }

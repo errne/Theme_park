@@ -21,4 +21,8 @@ public class Visitor {
     public double getMoney() {
         return money;
     }
+
+    public void spendMoney(double cost){
+        this.money -= cost;
+    }
 }
