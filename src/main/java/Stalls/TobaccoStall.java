@@ -1,7 +1,7 @@
 package Stalls;
 
-import Interfaces.ISecurity;
-import Interfaces.ITicketed;
+import Behaviours.ISecurity;
+import Behaviours.ITicketed;
 import Visitor.Visitor;
 
 public class TobaccoStall extends Stall implements ISecurity, ITicketed {

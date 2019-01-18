@@ -1,6 +1,6 @@
 package Attractions;
 
-import Interfaces.ISecurity;
+import Behaviours.ISecurity;
 import Visitor.Visitor;
 
 public class Playground extends Attraction implements ISecurity {

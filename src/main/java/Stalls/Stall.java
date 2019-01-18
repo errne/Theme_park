@@ -1,6 +1,6 @@
 package Stalls;
 
-import Interfaces.IReviewed;
+import Behaviours.IReviewed;
 
 public abstract class Stall implements IReviewed {
     private String name, ownerName, parkingSpot;

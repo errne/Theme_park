@@ -1,7 +1,7 @@
 import Attractions.Attraction;
-import Interfaces.IReviewed;
-import Interfaces.ISecurity;
-import Interfaces.ITicketed;
+import Behaviours.IReviewed;
+import Behaviours.ISecurity;
+import Behaviours.ITicketed;
 import Stalls.Stall;
 import Visitor.Visitor;
 

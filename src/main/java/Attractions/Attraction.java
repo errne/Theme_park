@@ -1,6 +1,6 @@
 package Attractions;
 
-import Interfaces.IReviewed;
+import Behaviours.IReviewed;
 
 public abstract class Attraction implements IReviewed {
     private String name;

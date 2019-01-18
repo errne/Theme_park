@@ -1,4 +1,4 @@
-package Interfaces;
+package Behaviours;
 
 import Visitor.Visitor;
 

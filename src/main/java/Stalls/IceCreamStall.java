@@ -1,6 +1,6 @@
 package Stalls;
 
-import Interfaces.ITicketed;
+import Behaviours.ITicketed;
 import Visitor.Visitor;
 
 public class IceCreamStall extends Stall implements ITicketed {
